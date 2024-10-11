@@ -269,6 +269,14 @@ async assignExeCustomer (req,res,next) {
           if(customerBulk.length) {
              Customer.bulkWrite(customerBulkOps);
           }
+
+          if (customerBulkOps.length > 0) {
+            await performBulkWrite('Customer', customerModel, customerBulkOps); // Pass table name, schema, and operations
+          }
+      
+          if (executiveBulkOps.length > 0) {
+            await performBulkWrite('Executive', executiveModel, executiveBulkOps); // Pass table name, schema, and operations
+          }
  
         }else {
           return "No active executives available for assignment."

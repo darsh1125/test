@@ -53,3 +53,46 @@ async function assignLeadsRoundRobin(limit) {
         console.error(err.message);
     }
 }
+
+
+// assing leads 
+
+const mongoose = require('mongoose');
+
+// Assuming you have a Mongoose schema and model, e.g.:
+const MyModel = mongoose.model('MyCollection', new mongoose.Schema({
+  someField: String,
+  countField: { type: Number, default: 0 }
+}));
+
+// The bulkWrite operation
+// async function bulkWriteOperation() {
+//   try {
+//     await MyModel.bulkWrite([
+//       {
+//         updateOne: {
+//           filter: { someField: 'example' }, // Match condition
+//           update: {
+//             $inc: { countField: 1 },        // Increment 'countField' by 1
+//             $setOnInsert: { countField: 1 } // Set 'countField' to 1 if it's a new document or field doesn't exist
+//           },
+//           upsert: true  // Insert a new document if no match is found
+//         }
+//       },
+//       {
+//         updateOne: {
+//           filter: { someField: 'anotherExample' },
+//           update: {
+//             $inc: { countField: 1 },
+//             $setOnInsert: { countField: 1 }
+//           },
+//           upsert: true
+//         }
+//       }
+//     ]);
+//   } catch (err) {
+//     console.error(err);
+//   }
+// }
+
+// bulkWriteOperation();

@@ -35,8 +35,8 @@ const message = {
     token: customer.deviceToken,
 };
 
-//  customer details name
-// executive name rejection reason
+//  customer details name 
+// executive name rejection reason employee 
 
 const message = {
     notification: {

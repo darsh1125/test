@@ -10,8 +10,6 @@ const assignmentTrackerSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('AssignmentTracker', assignmentTrackerSchema);
 
-
-
 const Customer = require('./models/Customer');
 const Executive = require('./models/Executive');
 const AssignmentTracker = require('./models/AssignmentTracker');
@@ -135,3 +133,86 @@ app.post('/assign-executive-round-robin', async (req, res) => {
         res.status(500).json({ error: 'Failed to assign executive' });
     }
 });
+
+
+create round robin function to assign register executive to customer 
+where executive have limit of assign customer
+in real-estate crm Project 
+
+api structure ==>
+
+async function assignExecutive(req,res,next){
+    try {
+       
+        var ResponseBody = {};
+
+        ResponseBody.status = 200;
+        ResponseBody.message = 'ok';
+
+        req.ResponseBody = ResponseBody;
+        next();
+        create round robin function to assign register executive to customer 
+where executive have limit of assign customer
+in real-estate crm Project 
+
+api structure ==>
+
+async function assignExecutive(req,res,next){
+    try {
+       
+        var ResponseBody = {};
+
+        ResponseBody.status = 200;
+        ResponseBody.message = 'ok';
+
+        req.ResponseBody = ResponseBody;
+        next();
+        
+    } catch (error) {
+        ResponseBody = { status:500,message:error.message }
+        next()
+
+    }
+}
+
+code use in real-life production give that kind of codecreate round robin function to assign register executive to customer 
+where executive have limit of assign customer
+in real-estate crm Project 
+
+api structure ==>
+
+async function assignExecutive(req,res,next){
+    try {
+       
+        var ResponseBody = {};
+
+        ResponseBody.status = 200;
+        ResponseBody.message = 'ok';
+
+        req.ResponseBody = ResponseBody;
+        next();
+        
+    } catch (error) {
+        ResponseBody = { status:500,message:error.message }
+        next()
+
+    }
+}
+
+// code use in real-life production give that kind of code
+//     } catch (error) {
+//         ResponseBody = { status:500,message:error.message }
+//         next()
+//     }
+// }
+
+code use in real-life production give that kind of code
+
+
+in Real-estate crm project when vendor upload sales deed document to customer 
+then customer approve or reject sales deed goes to vendor then vendor reupload updated sales deed
+to customer -and same process goes on - how can manage change request histroy of customer 
+and vendor list view view all documents history latest document display- create model and api in express mongoose 
+
+how to manage sales deed history when on customer request
+

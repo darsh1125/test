@@ -1,0 +1,40 @@
+//  bank loan 
+
+// customer upload loan docs
+// check if not reupload documents
+// first time insert documents
+// send notification to registration executive
+
+// reupload documents 
+// replace loan documents
+// send notification to user 
+
+// get document url 
+
+// Executive verify loan docs -- header executive id
+// customer id - approve or reject locument
+// aaprove then notification to user // reject document send notification to user
+
+
+
+
+// -----------------------------------------------------------------------------------
+
+// registration executive upload sales deed for customer send notifiction to customer
+// reupload sales deed documents
+
+// api for upload
+// check if customer and vendor exists then reupload documents
+// not exists upload documents
+// add documents history into documents history 
+// send notifications to customer
+
+// api for approve and reject
+// approve then send notification to vendors
+// reject then update history and send notifications to vendors
+
+
+
+
+
+
